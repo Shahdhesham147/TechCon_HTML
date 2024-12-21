@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -19,8 +19,51 @@
     </nav>
   </header>
 
+  <!-- Main Content Section -->
+  <main>
+    <form action="submit_registration.php" method="post">
+      <!-- Name Field -->
+      <div>
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" required>
+      </div>
 
+      <!-- Email Field -->
+      <div>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
 
-  
-  </body>
+      <!-- Password Fields -->
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div>
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+      </div>
+
+      <!-- Terms and Conditions -->
+      <div>
+        <label>
+          <input type="checkbox" id="terms" name="terms" required>
+          I agree to the <a href="terms-and-conditions.html">terms and conditions</a>.
+        </label>
+      </div>
+
+      <!-- Submit Button -->
+      <div>
+        <button type="submit">Register Now</button>
+      </div>
+    </form>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 All rights reserved for TechCon</p>
+  </footer>
+</body>
 </html>
+
+
